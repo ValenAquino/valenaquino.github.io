@@ -1,0 +1,127 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+
+.deco {
+    box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.2);
+}
+
+.form-container {
+    height: 50vh;
+    background: linear-gradient(135deg,#F54EA2,#FF7676);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+input {
+    width: 250px;
+    margin: 10px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    font-size: 35px;
+    color: rgb(25, 0, 71);
+}
+
+.input {
+    font-size: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    color: white;
+    background: linear-gradient(135deg,#79CBCA,#E684AE);
+    padding: 10px;
+}
+
+.respuesta {
+    height: 60vh;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(135deg,#79CBCA,#E684AE);
+}
+
+span {
+    color: white;
+    padding: 15px;
+    background: linear-gradient(135deg,#F54EA2,#FF7676);
+    margin: 15px;
+}
+
+#btnSubmit {
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    transition: 0.2s;
+    border-radius: 10px;
+    background: linear-gradient(135deg,#79CBCA,#E684AE);
+}
+
+#btnSubmit:hover {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.2);
+    transition: 0.3s;
+ }
+
+
+@media (min-width: 620px){
+    span {
+        position: relative;
+        top: -5vh;
+    }
+}
+
+@media (max-width: 620px) {
+    form {
+        width: 100%;
+    }
+    
+    .input {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    .respuesta {
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    span {
+        width: 80%;
+    }
+
+    .form-container {
+        height: 67vh;
+    }
+
+    #btnSubmit {
+        margin: 15px;
+    }
+}
+
+.noDisplay {
+    display: "none" !important; 
+}
+
+.fullHeight {
+    height: 100vh !important; 
+}
